@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/dccd4afe-8eb7-4f43-970a-f2e70f474620/AppServices/subscriptions/dccd4afe-8eb7-4f43-970a-f2e70f474620/resourceGroups/OHT2/providers/Microsoft.Web/sites/testiAzure",
+    "appService.deploySubpath": "."
+}
