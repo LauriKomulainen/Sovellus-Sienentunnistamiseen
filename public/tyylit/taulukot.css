@@ -1,0 +1,27 @@
+#tulos {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+td,
+th {
+    border: 2px solid #999;
+    padding: 0.5rem;
+}
+
+.inputkentta {
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: auto [controls] 1fr;
+    grid-gap: 1.5em;
+    padding: 0.8em;
+    border: 1px solid black;
+    grid-column: controls;
+    grid-template-columns: 1fr 2fr;
+}

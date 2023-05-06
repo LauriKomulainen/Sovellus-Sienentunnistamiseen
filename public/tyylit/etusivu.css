@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.profile-card {
+    width: 800px;
+    max-width: calc(100vw - 10px);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "raleway";
+}
+
+.head,
+.links {
+    text-align: center;
+}
+
+.head,
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head,
+.about {
+    margin-bottom: 10%;
+}
+
+.content {
+    padding: 5% 10%;
+}
+
+.profile-card {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 4px;
+    box-shadow: hsla(0, 0%, 0%, 0.8) 10px 10px 80px;
+}
+
+.content {
+    border-top: 1px solid hsla(0, 0%, 30%, 0.8);
+}
+
+p {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#vaarin {
+    color: red;
+}
+
+#kirjaaSisaan {
+    margin-top: 10px;
+}

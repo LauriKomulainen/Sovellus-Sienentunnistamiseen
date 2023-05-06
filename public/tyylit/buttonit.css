@@ -1,0 +1,133 @@
+#analysoi {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#analysoi:hover {
+    background: #006e52;
+}
+
+#poistakuva {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: red;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    margin-top: 10px;
+}
+
+#poistakuva:hover {
+    background: rgb(177, 2, 2)
+}
+
+#haeEnnustukset {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#haeEnnustukset:hover {
+    background: #006e52;
+}
+
+#luoPdfRaportti {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#luoPdfRaportti:hover {
+    background: #006e52;
+}
+
+#lisaatietoa {
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#lisaatietoa:hover {
+    background: #006e52;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 5px;
+    width: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button:hover {
+    border: 1px solid #C1EAAD;
+}
+
+.navigointi:hover {
+    background: #ffffff;
+}

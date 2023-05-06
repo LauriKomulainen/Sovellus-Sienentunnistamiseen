@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+
+    .main-header {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 33.3%;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .main-header {
+        width: 20.625%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .primary-content {
+        float: right;
+        width: 66.6%;
+        max-width: 1200px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .primary-content {
+        float: none;
+        position: absolute;
+        left: 20.625%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .table-responsive {
+        font-size: 12px;
+    }
+
+}
