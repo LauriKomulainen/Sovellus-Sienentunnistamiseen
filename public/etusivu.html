@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Eric Meyer CSS reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+
+    <!--CSS tyylit-->
+    <link rel=stylesheet href="../tyylit/style.css">
+    <link rel="stylesheet" href="../tyylit/buttonit.css">
+    <link rel="stylesheet" href="../tyylit/taulukot.css">
+    <link rel="stylesheet" href="../tyylit/responsiivisuus.css">
+    <link rel="stylesheet" href="../tyylit/modal.css">
+
+    <!--Fontti-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <title>Websovellus kuvantunnistamiseen</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Websovellus kuvantunnistamiseen</h1>
+        <a class="button navigointi" href="./etusivu.html">Etusivu</a>
+        <a class="button navigointi" href="./html/ennustukset.html">Data</a>
+    </header>
+    <main class="primary-content">
+        <div class="container d-flex justify-content-center mt-100 post">
+            <h2>Kuvan lataaminen</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="file-drop-area">
+                    <span class="header">Raahaa kuva tähän</span>
+                    <span class="header">&nbsp;tai&nbsp;<span class="button-browse">selaa</span></span>
+                    <input type="file" name="image" hidden>
+                </div>
+                <div class="image-container" name="container"></div>
+            </form>
+            <div class="form-action">
+                <button id="analysoi" type="button">Analysoi</button>
+                <button id="poistakuva" type="button">Poista kuva</button>
+            </div>
+        </div>
+
+        <article class="post">
+            <h2>Tulos</h2>
+            <h1 id="result">Et ole valinnut kuvaa</h1>
+            <p id="sienikertomus">Lataa ensin kuva, jotta pystyt muodostamaan ennustuksia sienistä.</p>
+            <button id="lisaatietoa" type="button" hidden>Lisää tietoja</button>
+            <p id="sienitiedot"></p>
+        </article>
+        <article class="post">
+            <h2>Tietoa projektista</h2>
+            <p class="lisatietoaprojektista">Websovellus kuvantunnistamiseen on sovellus, jolla voidaan tunnistaa
+                Suomessa esiintyviä sieniä. Sovellus
+                käyttää
+                tunnistamiseen Custom Vision työkalua ja tiedon varastoimisessa on käytetty Microsoft Azuren
+                CosmosDB-palvelua.
+                <br> <br>
+                Sovelluksessa voidaan muodostaa myös PDF-raportti aiemmista ennustuksista, joita voidaan hakea
+                päivämäärän, ennustuksen
+                tuloksen tai sienen mukaan.
+            </p>
+
+            <p class="lisatietoaprojektista">Websovellus kuvantunnistamiseen on tarkoitettu avuksi Suomessa esiintyvien
+                sienien tunnistamisessa. Käyttäjä vastaa täysin sovelluksen antaman tiedon tulkinnasta ja lopullisista
+                päätöksistä
+                sienien tunnistamiseen liittyen. On tärkeää huomata, että sovellus ei takaa sienitunnistusten
+                täydellistä tarkkuutta tai
+                oikeellisuutta, eikä se vastaa mahdollisista vahingoista tai menetyksistä, jotka johtuvat sen käytöstä
+                tai tiedoista.
+                Käyttäjän tulee olla tietoinen siitä, että sovellus perustuu käyttäjien antamiin tietoihin, jotka voivat
+                sisältää
+                virheitä tai puutteita, ja nämä voivat vaikuttaa sovelluksen antamiin tuloksiin. Käyttäjän tulee käyttää
+                omaa harkintaa
+                sovelluksen antamien tietojen ja tulosten suhteen, ja välttää liiallista luottamusta sovelluksen
+                antamiin tietoihin.
+                Sovelluksen käyttö on täysin käyttäjän omalla vastuulla</p>
+        </article>
+    </main>
+</body>
+<script src="./javascripts/kuvanLataaminen.js"></script>
+<script src="./javascripts/analysoiKuva.js"></script>
+<script src="./javascripts/sienenLisatietojenHakeminen.js"></script>
+<script>
+    const password = sessionStorage.getItem('password');
+    if (!password) {
+        // Käyttäjä ei ole kirjautunut sisään
+        window.location.href = 'index.html';
+    }
+</script>
+
+</html>

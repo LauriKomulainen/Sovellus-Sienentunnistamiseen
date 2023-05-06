@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Eric Meyer CSS reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+
+    <!--CSS tyylit-->
+    <link rel=stylesheet href="../tyylit/style.css">
+    <link rel="stylesheet" href="../tyylit/buttonit.css">
+    <link rel="stylesheet" href="../tyylit/taulukot.css">
+    <link rel="stylesheet" href="../tyylit/responsiivisuus.css">
+
+    <!--Fontti-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <title>Websovellus kuvantunnistamiseen</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Websovellus kuvantunnistamiseen</h1>
+        <a class="button navigointi" href="../etusivu.html">Etusivu</a>
+        <a class="button navigointi" href="./ennustukset.html">Data</a>
+    </header>
+    <main class="primary-content">
+        <div class="container d-flex justify-content-center mt-100 post">
+            <h2>Hae ennustuksia</h2>
+            <div class="">
+                <label for="paivamaara">Päivämäärä:</label>
+                <input id="paivamaara" class="inputkentta" name="paivamaara" placeholder="esim. 27.2.2023">
+            </div>
+            <div>
+                <label for="Vahimmaisprosentti">Ennustuksen tulos vähintään:</label>
+                <input type="number" id="ennustus" class="inputkentta" step="0.01" placeholder="esim. 90.5">
+            </div>
+            <div>
+                <label for="Sieni">Sieni:</label>
+                <input type="text" id="sieni" class="inputkentta" placeholder="esim. kärpässieni">
+            </div>
+            <button id="haeEnnustukset" type="button">Hae ennustukset</button>
+            <button id="luoPdfRaportti" type="button">Luo PDF raportti</button>
+            <table id="tulokset" class="table-responsive"></table>
+            <a class="takaisinEtusivulle" href="../etusivu.html">Palaa takaisin kotisivulle</a>
+        </div>
+    </main>
+</body>
+<script src="../javascripts/ennustusHistoria.js"></script>
+<script src="../javascripts/luoPdfRaportti.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    const password = sessionStorage.getItem('password');
+    if (!password) {
+        // Käyttäjä ei ole kirjautunut sisään
+        window.location.href = '../index.html';
+    }
+</script>
+
+</html>

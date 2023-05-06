@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!--Eric Meyer CSS reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+
+    <!--CSS tyylit-->
+    <link rel="stylesheet" href="./tyylit/style.css">
+    <link rel="stylesheet" href="./tyylit/etusivu.css">
+    <link rel="stylesheet" href="./tyylit/taulukot.css">
+    <link rel="stylesheet" href="./tyylit/buttonit.css">
+    <link rel="stylesheet" href="./tyylit/responsiivisuus.css">
+
+    <!--Fontti-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <title>Kirjaudu sisään</title>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="head">
+            <div class="name-headline">
+                <h1 id="kirjaaSisaan">Kirjaudu sisään:</h1>
+            </div>
+        </div>
+        <form class="content" id="kirjaudu">
+            <label for="password">Salasana:</label>
+            <input type="password" class="inputkentta" id="password" name="password">
+            <br>
+            <h2 id="vaarin"></h2>
+            <input type="submit" id="analysoi" value="Kirjaudu">
+        </form>
+    </div>
+</body>
+<script src="./javascripts/kirjauduSisaanFrontti.js"></script>
+
+</html>
